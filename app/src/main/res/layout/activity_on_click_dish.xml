@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back2"
+        tools:context=".OnClickDish">
+
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/orderfood"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvheading"
+            android:text="Dish Detail"
+            android:textSize="30dp"
+            android:gravity="center"/>
+    <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/ivitmimage"
+            android:layout_below="@+id/tvheading"
+            android:layout_marginLeft="70dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivitmimage"
+            android:orientation="horizontal"
+            android:id="@+id/lay1"
+            android:layout_margin="25sp">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Dish Name is :"
+                android:textColor="#fff"
+                android:layout_weight="3"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/itmname"
+                android:textSize="15dp"
+                android:layout_weight="4"
+        />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay1"
+            android:orientation="horizontal"
+            android:id="@+id/lay2"
+            android:layout_margin="25sp"
+    >
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Dish Price is :"
+                android:textColor="#fff"
+                android:layout_weight="3"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/itmprice"
+                android:textSize="15dp"
+                android:layout_weight="4"
+        />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay2"
+            android:orientation="horizontal"
+            android:id="@+id/lay3"
+            android:layout_margin="25sp">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Dish Category:"
+                android:textColor="#fff"
+                android:layout_weight="3"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/itmcat"
+                android:textSize="15dp"
+                android:layout_weight="4"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay2"
+            android:orientation="horizontal"
+            android:id="@+id/lay4"
+            android:layout_margin="60dp">
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnres"
+            android:text="Do you want to reserve table?"
+    />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
